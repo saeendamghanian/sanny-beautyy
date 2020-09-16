@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/website.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <script src="./js/website.js"></script>
+  <title>Sanny Beautyy</title>
+</head>
+
+<body>
+  <header>
+    <div>
+      <nav id="sidenav">
+        <div>
+          <div id="sidenav-items">
+            <span class="closebtn" onclick="closeNav()">&times;</span>
+            <a href="#section-playgrounds" onclick="closeNav()">Home</a>
+            <a href="#section-teachers" onclick="closeNav()">Product</a>
+            <a href="#section-resources" onclick="closeNav()">Contact</a>
+          </div>
+
+          <!-- Use any element to open the sidenav -->
+          <div id="menu-icon" onclick="openNav()">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <!-- <button class="btn" onclick="openNav()">X</button class="btn"> -->
+
+          <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+          <!-- <div id="main">
+              ...
+            </div> -->
+        </div>
+      </nav>
+      <span id="header-title">Sanny Beautyy</span>
+      <img id="logo" src="./images/sanny_beautyy_logo.jpeg" />  
+    </div>
+    <nav>
+        <div id="main-nav">
+          <ul>
+            <li class="nav-item">Home</li>
+            <li class="nav-item">Product</li>
+            <li class="nav-item">Contact</li>
+          </ul>
+        </div>
+    </nav>
+  </header>
+  <section id="section-home">
+    <div>
+      <h1>Esprimi la tua creatività!</h1>
+      <p>
+        Scopri come imparare ed insegnare usando il visual coding creando progetti personalizzati
+      </p>
+    </div>
+  </section>
+  <section id="section-playgrounds" class="section even">
+    <h1 class="section-title">Cosa vuoi creare?</h1>
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <div class="section-body">
+          <div class="section-content">
+            <div class="content-txt">
+              <h3>Arte, Matematica e Visualizzazioni</h3>
+              <p>
+                Crea bellissime immagini, trasforma formule matematiche in visualizzazioni interessanti o gioca con forme e colori!
+              </p>
+            </div>
+            <div><a href="dataviz.html" class="btn even">INIZIA</a><a class="btn even">GUARDA TUTORIAL</a></div>
+          </div>
+          <a href="dataviz.html"><img class="section-image" src="./images/dataviz_example.png" alt="" /></a>
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="section-body">
+          <div class="section-content">
+            <div class="content-txt">
+              <h3>Quiz Interattivi</h3>
+              <p>
+                Crea un quiz per mettere alla prova i tuoi amici, la tua famiglia o i tuoi insegnanti! Un modo nuovo di condividere le proprie conoscenze e scoperte!
+              </p>
+            </div>
+            <div><a href="quiz.html" class="btn even">INIZIA</a><a class="btn even">GUARDA TUTORIAL</a></div>
+          </div>
+          <a href="quiz.html"><img class="section-image" src="./images/quiz_example.png" alt="" /></a>
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="section-body">
+          <div class="section-content">
+            <div class="content-txt">
+              <h3>Racconta una storia</h3>
+              <p>
+                Crea un racconto interattivo per esprimere la tua opinione o spiegare attraverso uno story telling interattivo o magari un vero e proprio gioco narrativo!
+              </p>
+            </div>
+            <div>
+              <div><a href="story.html" class="btn even">INIZIA</a><a class="btn even">GUARDA TUTORIAL</a></div>
+            </div>
+          </div>
+          <a href="story.html"><img class="section-image" src="./images/story_example.png" alt="" /></a>
+        </div>
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)"></a>
+      <a class="next" onclick="plusSlides(1)"></a>
+    </div>
+    <br />
+
+    <!-- The dots/circles -->
+    <div style="text-align: center;">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+  </section>
+  <section id="section-teachers" class="section odd overflow-hidden">
+    <h1 class="section-title">Per gli insegnanti?</h1>
+    <div class="section-body">
+      <div class="section-content">
+        <div class="content-txt">
+          <h3>Crea un'attività per studenti</h3>
+          <p>
+            Desideri usare questi strumenti creativi per proporre ai tuoi studenti una lezione online o in classe? Componi la tua lezione personalizzata e condividila con loro!
+          </p>
+        </div>
+        <div><a class="btn odd">INIZIA</a><a class="btn odd">GUARDA TUTORIAL</a></div>
+      </div>
+      <img class="section-image rotate-scale-translate" src="./images/jeshoots-com--2vD8lIhdnw-unsplash.jpg" alt="" />
+    </div>
+  </section>
+  <section id="section-resources" class="section even">
+    <h1 class="section-title">Risorse utili</h1>
+    <div class="section-body">
+      <div class="section-content">
+        <div class="content-txt">
+          <h3>Una playlist di tutorial</h3>
+          <p>
+            Video tutorial e guide per scoprire i nostri Creative Coding Toolkit per divertimento, per imparare o per insegnare ai tuoi studenti!
+          </p>
+        </div>
+        <div><a class="btn even">INIZIA AD IMPARARE</a></div>
+      </div>
+      <img class="section-image" src="./images/coding-sample.jpg" alt="" />
+    </div>
+  </section>
+  <footer class="odd">
+    <p><a href="#">Conditions of Use</a> | <a href="#">Privacy Notice</a> | © 2020, Sanny Beautyy Corporation</p>
+    <img src="./images/sanny_beaty_logo_BW.jpeg" alt="" />
+  </footer>
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+  </script>
+</body>
+
+</html>
