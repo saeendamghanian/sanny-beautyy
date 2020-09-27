@@ -5,9 +5,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./css/website.css" />
+  <link rel="stylesheet" href="./css/MainbarDropdown.css" />
+  <link rel="stylesheet" href="./css/SidebarDropdown.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
   <script src="./js/website.js"></script>
-  <title>Sanny Beautyy</title>
+  <title>Sanny Beauty</title>
 </head>
 
 <body>
@@ -18,7 +20,17 @@
           <div id="sidenav-items">
             <span class="closebtn" onclick="closeNav()">&times;</span>
             <a href="#section-playgrounds" onclick="closeNav()">Home</a>
-            <a href="#section-teachers" onclick="closeNav()">Product</a>
+            <button class="dropdown-btn">Social Media 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+              <a href="#">Instagram</a>
+                <a href="#">Youtube</a>
+                <a href="#">Facebook</a>
+                <a href="#">Telegram</a>
+            </div>
+            <a href="#section-resources" onclick="closeNav()">Video</a>
+            <a href="#section-resources" onclick="closeNav()">Discount Code</a>
             <a href="#section-resources" onclick="closeNav()">Contact</a>
           </div>
 
@@ -36,15 +48,25 @@
             </div> -->
         </div>
       </nav>
-      <span id="header-title">Sanny Beautyy</span>
+      <!-- <span id="header-title">Sanny Beautyy</span> -->
       <img id="logo" src="./images/sanny_beautyy_logo.jpeg" />  
     </div>
     <nav>
         <div id="main-nav">
           <ul>
-            <li class="nav-item">Home</li>
-            <li class="nav-item">Product</li>
-            <li class="nav-item">Contact</li>
+            <li class="nav-item"><a href="#">Home</a></li>
+            <li class="dropdown">
+              <span class="dropbtn">Social Media</span>
+              <div class="dropdown-content">
+                <a href="#">Instagram</a>
+                <a href="#">Youtube</a>
+                <a href="#">Facebook</a>
+                <a href="#">Telegram</a>
+              </div>
+            </li>
+            <li class="nav-item"><a href="#">Video</a></li>
+            <li class="nav-item"><a href="#">Discount Code</a></li>
+            <li class="nav-item"><a href="#">Contact</a></li>
           </ul>
         </div>
     </nav>
@@ -160,6 +182,7 @@
     var slideIndex = 1;
     showSlides(slideIndex);
   </script>
+  <script src="./js/SidebarDropdown.js"></script>
 </body>
 
 </html>

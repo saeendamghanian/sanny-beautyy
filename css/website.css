@@ -107,7 +107,7 @@ header {
 
 header > div {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin: 1rem;
   align-items: center;
   width: 100vw;
@@ -145,7 +145,7 @@ nav#sidenav>div {
 #logo {
   /* width: 16vw; */
   width: 50px;
-  margin-right: 3rem;
+  margin-left: 24vw;
 }
 
 /* The side navigation menu */
@@ -171,13 +171,19 @@ nav#sidenav>div {
 }
 
 /* The navigation menu links */
-#sidenav-items a {
+#sidenav-items a, .dropdown-btn {
   margin: 1rem 1rem 1rem 3rem;
   text-decoration: none;
+  white-space: nowrap;
   color: var(--white);
   display: flex;
   transition: 0.3s;
   width: fit-content;
+
+  /* For dropdowwn btn */
+  background: none;
+  outline: none;
+  border: none;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -335,7 +341,7 @@ footer>img {
   transition: background-color 0.6s ease;
 }
 
-.active,
+span.active,
 .dot:hover {
   background-color: var(--smile);
 }
@@ -380,7 +386,7 @@ footer>img {
   #logo {
     /* width: 8vw; */
     width: 50px;
-    margin-right: 4rem;
+    margin-left: 37vw;
   }
 
   .section {
@@ -427,7 +433,7 @@ footer>img {
     padding-top: 5rem;
   }
 
-  #sidenav-items a {
+  #sidenav-items a, .dropdown-btn {
     font-size: 25px;
   }
 }
@@ -439,7 +445,6 @@ footer>img {
 
   #main-nav {
     display: block;
-    margin: 1rem;
   }
 
   #main-nav > ul {
@@ -448,18 +453,33 @@ footer>img {
   }
 
   #main-nav > ul li {
-    margin-right: 1rem;
+    margin: 0 1rem;
     cursor: pointer;
+    border-bottom: solid 2px var(--snow);
+  }
+
+  #main-nav > ul li a, .dropbtn {
+    padding: 1rem;
+    text-decoration: none;
+    color: #000;
   }
 
   #main-nav > ul li:hover {
     color: var(--smile);
-    line-height: 10px;
     border-bottom: solid 2px var(--smile);
   }
 
+header > div {
+  justify-content: center;
+  margin: 0;
+}
+
   header > div > nav {
     display: none;
+  }
+
+  #logo {
+    margin-left: 0;
   }
   
   .next {

@@ -3,6 +3,10 @@
 
 */
 
+/* 
+  Mainbar starts
+*/
+
 /* Set the width of the side navigation to 250px */
 function openNav() {
   document.getElementById('sidenav-items').style.width = '250px';
@@ -48,3 +52,7 @@ function showSlides(number) {
   slides[slideIndex - 1].style.display = 'block';
   dots[slideIndex - 1].className += ' active';
 }
+
+/* 
+  Mainbar ends
+*/
