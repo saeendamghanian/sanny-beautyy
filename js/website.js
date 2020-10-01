@@ -56,3 +56,16 @@ function showSlides(number) {
 /* 
   Mainbar ends
 */
+
+/* Form scripts starts */
+
+const inputs = document.querySelectorAll('input');
+
+inputs.forEach(input => {
+  input.addEventListener('change', event => {
+    if(event.target.value) event.target.classList.add('value-changed');
+    else event.target.classList.remove('value-changed');
+  })
+})
+
+/* Form scripts ends */
