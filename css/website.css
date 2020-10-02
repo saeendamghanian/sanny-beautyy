@@ -43,7 +43,6 @@
 body {
   font-family: Amazon Ember Display Light;
   font-size: 16px;
-  padding-top: 3.5rem;
   background-color: var(--page_background);
 }
 
@@ -222,18 +221,8 @@ nav#sidenav > div {
   height: 100vh;
   width: 100%;
   background-position: center;
-  margin-top: 3.3rem;
   color: var(--white);
   font-size: 1.6em;
-}
-
-#section-home > div {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  height: 80%;
-  max-width: 41vw;
-  margin-left: 5rem;
 }
 
 .section img {
@@ -409,6 +398,10 @@ span.active,
 }
 
 @media (min-width: 768px) {
+  body {
+    padding-top: 10rem;
+  }
+
   .rotate-scale-translate {
     transform: rotate(-10deg) scale(1.5) translate(5rem, 2.6rem);
   }
@@ -487,7 +480,7 @@ span.active,
 
 @media (min-width: 1024px) {
   body {
-    padding-top: 11rem;
+    padding-top: 16rem;
   }
 
   #main-nav {
