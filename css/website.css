@@ -42,6 +42,7 @@
 body {
   font-family: Amazon Ember Display Light;
   font-size: 16px;
+  padding-top: 2.5rem;
 }
 
 header {
@@ -49,6 +50,20 @@ header {
   background-color: var(--snow);
   top: 0;
   z-index: 1000;
+  transition: top 0.5s;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+header > div {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 1rem 0.5rem 1rem;
+  align-items: center;
+  width: 100vw;
 }
 
 p {
@@ -100,19 +115,6 @@ p {
   background-color: var(--smile);
 }
 
-header {
-  display: flex;
-  flex-direction: column;
-}
-
-header > div {
-  display: flex;
-  justify-content: flex-start;
-  margin: 1rem;
-  align-items: center;
-  width: 100vw;
-}
-
 nav#sidenav > div {
   display: flex;
   align-items: center;
@@ -126,7 +128,7 @@ nav#sidenav > div {
   display: inline-block;
   padding-right: 1rem;
   margin-right: 1rem;
-  border-right: solid var(--storm) 1px;
+  border-right: solid #ccc 1px;
   cursor: pointer;
 }
 
@@ -143,8 +145,7 @@ nav#sidenav > div {
 }
 
 #logo {
-  /* width: 16vw; */
-  width: 50px;
+  width: 16vw;
   margin-left: 24vw;
 }
 
@@ -215,11 +216,9 @@ nav#sidenav > div {
 
 /* The side navigation menu end */
 #section-home {
-  background: center / contain no-repeat url(../images/background-filter.png),
-    url(../images/photo-1525829528215-ffae12a76ac8.jpeg);
-  height: 80vh;
-  min-height: 640px;
-  background-size: cover;
+  background: center / contain no-repeat url(../images/img-02.jpeg);
+  height: 100vh;
+  width: 100%;
   background-position: center;
   margin-top: 3.3rem;
   color: var(--white);
@@ -302,7 +301,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 footer a {
@@ -310,8 +309,7 @@ footer a {
 }
 
 footer > img {
-  width: 4vw;
-  margin-top: 1rem;
+  width: 17vw;
 }
 
 /* Slideshow container */
@@ -418,8 +416,7 @@ span.active,
   }
 
   #logo {
-    /* width: 8vw; */
-    width: 50px;
+    width: 8vw;
     margin-left: 37vw;
   }
 
@@ -470,7 +467,10 @@ span.active,
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 2rem;
+  }
+
+  footer > img {
+    width: 8vw;
   }
 
   #sidenav-items {
@@ -485,9 +485,8 @@ span.active,
 
 @media (min-width: 1024px) {
   body {
-    font-size: 20px;
+    padding-top: 6.5rem;
   }
-
   #main-nav {
     display: flex;
     justify-content: center;
@@ -519,6 +518,7 @@ span.active,
   header > div {
     justify-content: center;
     margin: 0;
+    padding-bottom: 0;
   }
 
   header > div > nav {
@@ -559,5 +559,9 @@ span.active,
 
   section#social-network > div {
     padding-top: 6rem;
+  }
+
+  footer > img {
+    width: 4vw;
   }
 }
