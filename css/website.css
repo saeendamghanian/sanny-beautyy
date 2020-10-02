@@ -5,6 +5,7 @@
   --smile: #ff9900;
   --storm: #6c7778;
   --snow: #eaeded;
+  --page_background: #f9f9f9;
 }
 
 /* prettier-ignore */
@@ -42,12 +43,13 @@
 body {
   font-family: Amazon Ember Display Light;
   font-size: 16px;
-  padding-top: 2.5rem;
+  padding-top: 3.5rem;
+  background-color: var(--page_background);
 }
 
 header {
   position: fixed;
-  background-color: var(--snow);
+  background-color: var(--page_background);
   top: 0;
   z-index: 1000;
   transition: top 0.5s;
@@ -485,8 +487,9 @@ span.active,
 
 @media (min-width: 1024px) {
   body {
-    padding-top: 6.5rem;
+    padding-top: 11rem;
   }
+
   #main-nav {
     display: flex;
     justify-content: center;
@@ -500,7 +503,7 @@ span.active,
   #main-nav > ul li {
     margin: 0 1rem;
     cursor: pointer;
-    border-bottom: solid 2px var(--snow);
+    border-bottom: solid 2px var(--page_background);
   }
 
   #main-nav > ul li a,
