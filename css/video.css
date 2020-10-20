@@ -1,0 +1,26 @@
+/* Styles for Video Page */
+
+section#video {
+  padding-top: 5rem;
+}
+
+section#video > div {
+  padding: 0.5rem 0.5rem;
+}
+
+section#video > div > iframe {
+  width: 100%;
+  height: 50vw;
+  padding: 0.5rem 0.5rem;
+  border: solid;
+}
+
+@media (min-width: 768px) {
+  section#video {
+    padding-top: 0;
+  }
+
+  section#video > div {
+    padding: 0 5rem;
+  }
+}

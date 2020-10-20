@@ -1,11 +1,17 @@
 /* ONLY WEBSITE CSS */
+
 :root {
-  --squid-ink: #232f3e;
-  --white: #fff;
-  --smile: #ff9900;
-  --storm: #6c7778;
-  --snow: #eaeded;
-  --page_background: #eaeded;
+  --bg_1: #232f3e;
+  --bg_2: #eaeded;
+  --bg_3: #6c7778;
+  --text_color_1: #fff;
+  --text_color_2: #dad5d5;
+  --mark_color: #ff9900;
+  --social-bg: #000;
+  --instagram: #e95950;
+  --youtube: #ff0000;
+  --facebook: #3b5998;
+  --telegram: #0088cc;
 }
 
 /* prettier-ignore */
@@ -47,13 +53,13 @@ html {
 body {
   font-family: Amazon Ember Display Light;
   font-size: 16px;
-  background-color: var(--page_background);
+  background-color: var(--bg_2);
   padding-top: 2rem;
 }
 
 header {
   position: fixed;
-  background-color: var(--squid-ink);
+  background-color: var(--bg_1);
   top: 0;
   z-index: 1000;
   transition: top 0.5s;
@@ -93,6 +99,10 @@ p {
   display: inline-block;
 }
 
+.current-page {
+  border-bottom: solid var(--mark_color) !important;
+}
+
 nav#sidenav > div {
   display: flex;
   align-items: center;
@@ -106,14 +116,14 @@ nav#sidenav > div {
   display: inline-block;
   padding-right: 1rem;
   margin-right: 1rem;
-  border-right: solid #ccc 1px;
+  border-right: solid var(--bg_2) 1px;
   cursor: pointer;
 }
 
 #menu-icon > div {
   width: 1.5rem;
   height: 0.2rem;
-  background-color: var(--storm);
+  background-color: var(--bg_3);
   margin: 0.2rem 0;
 }
 
@@ -140,7 +150,7 @@ nav#sidenav > div {
   top: 0;
   /* Stay at the top */
   left: 0;
-  background-color: var(--squid-ink);
+  background-color: var(--bg_1);
   overflow-x: hidden;
   /* Disable horizontal scroll */
   padding-top: 2rem;
@@ -152,15 +162,20 @@ nav#sidenav > div {
 /* The navigation menu links */
 #sidenav-items a,
 .dropdown-btn {
-  margin: 1rem 1rem 1rem 3rem;
+  padding: 1.5rem 1rem 0.5rem 1rem;
+  margin-left: 2rem;
   text-decoration: none;
   white-space: nowrap;
-  color: var(--white);
+  color: var(--text_color_1);
   display: flex;
   transition: 0.3s;
   width: fit-content;
+  outline: none;
+}
 
-  /* For dropdowwn btn */
+.dropdown-btn {
+  font-size: 16px;
+  font-family: Amazon Ember Display Light;
   background: none;
   outline: none;
   border: none;
@@ -168,7 +183,7 @@ nav#sidenav > div {
 
 /* When you mouse over the navigation links, change their color */
 #sidenav-items a:hover {
-  color: var(--smile);
+  color: var(--mark_color);
 }
 
 /* Position and style the close button (top right corner) */
@@ -178,12 +193,12 @@ nav#sidenav > div {
   right: 1rem;
   font-size: 36px;
   margin-left: 3rem;
-  color: var(--white);
+  color: var(--text_color_1);
   cursor: pointer;
 }
 
 #sidenav-items .closebtn:hover {
-  color: var(--smile);
+  color: var(--mark_color);
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
@@ -198,7 +213,7 @@ nav#sidenav > div {
   height: 100vh;
   width: 100%;
   background-position: center;
-  color: var(--white);
+  color: var(--text_color_1);
   font-size: 1.6em;
 }
 
@@ -233,19 +248,19 @@ section#social-network > div {
 }
 
 .fa-instagram {
-  color: #e95950;
+  color: var(--instagram);
 }
 
 .fa-youtube {
-  color: #ff0000;
+  color: var(--youtube);
 }
 
 .fa-facebook-square {
-  color: #3b5998;
+  color: var(--facebook);
 }
 
 .fa-telegram {
-  color: #0088cc;
+  color: var(--telegram);
 }
 
 .section-content {
@@ -270,12 +285,12 @@ footer {
   flex-direction: column;
   align-items: center;
   padding: 1rem;
-  background-color: var(--squid-ink);
-  color: var(--white);
+  background-color: var(--bg_1);
+  color: var(--text_color_1);
 }
 
 footer a {
-  color: var(--white);
+  color: var(--text_color_1);
 }
 
 footer > img {
@@ -302,14 +317,14 @@ footer > img {
   position: absolute;
   top: 50%;
   padding: 0.25rem;
-  color: var(--white);
+  color: var(--text_color_1);
   font-weight: bold;
   font-size: 20px;
   transition: 0.6s ease;
   border-radius: 50%;
   user-select: none;
   width: 2rem;
-  background-color: var(--smile);
+  background-color: var(--mark_color);
 }
 
 /* Position the "next button" to the right */
@@ -337,7 +352,7 @@ footer > img {
   height: 1rem;
   width: 1rem;
   margin: 0 0.5rem;
-  background-color: var(--squid-ink);
+  background-color: var(--bg_1);
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
@@ -345,7 +360,7 @@ footer > img {
 
 span.active,
 .dot:hover {
-  background-color: var(--smile);
+  background-color: var(--mark_color);
 }
 
 /* Fading animation */
@@ -383,10 +398,6 @@ span.active,
 
   .rotate-scale-translate {
     transform: rotate(-10deg) scale(1.5) translate(5rem, 2.6rem);
-  }
-
-  #header-title {
-    font-size: 25px;
   }
 
   #logo {
@@ -441,8 +452,8 @@ span.active,
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: var(--squid-ink);
-    color: var(--page_background);
+    background-color: var(--bg_1);
+    color: var(--bg_2);
   }
 
   footer > img {
@@ -452,16 +463,15 @@ span.active,
   #sidenav-items {
     padding-top: 5rem;
   }
-
-  #sidenav-items a,
-  .dropdown-btn {
-    font-size: 25px;
-  }
 }
 
 @media (min-width: 1024px) {
   body {
     padding-top: 16rem;
+  }
+
+  .current-page {
+    border-bottom-color: var(--mark_color) !important;
   }
 
   #main-nav {
@@ -477,19 +487,19 @@ span.active,
   #main-nav > ul li {
     margin: 0 1rem;
     cursor: pointer;
-    border-bottom: solid 2px var(--squid-ink);
+    border-bottom: solid 2px var(--bg_1);
   }
 
   #main-nav > ul li a,
   .dropbtn {
     padding: 1rem;
     text-decoration: none;
-    color: var(--page_background);
+    color: var(--bg_2);
   }
 
   #main-nav > ul li:hover {
-    color: var(--smile);
-    border-bottom: solid 2px var(--smile);
+    color: var(--mark_color);
+    border-bottom: solid 2px var(--mark_color);
   }
 
   header > div {
@@ -515,27 +525,27 @@ span.active,
   }
 
   .fab {
-    color: #000;
+    color: var(--social-bg);
   }
 
   .fa-instagram:hover {
-    color: #e95950;
+    color: var(--instagram);
   }
 
   .fa-youtube:hover {
-    color: #ff0000;
+    color: var(--youtube);
   }
 
   .fa-facebook-square:hover {
-    color: #3b5998;
+    color: var(--facebook);
   }
 
   .fa-telegram:hover {
-    color: #0088cc;
+    color: var(--telegram);
   }
 
   section#social-network > div {
-    padding: 6rem 0;
+    padding: 6rem 0 4rem 0;
   }
 
   footer > img {
