@@ -1,40 +1,50 @@
 /* This stylesheet is just for the Dropdown Menu inside a Navigation Bar */
+:root {
+  --squid-ink: #232f3e;
+  --white: #fff;
+  --smile: #ff9900;
+  --storm: #6c7778;
+  --snow: #eaeded;
+  --page_background: #eaeded;
+}
 
 ul {
-    overflow: hidden;
-  }
+  overflow: hidden;
+}
 
-  li a, .dropbtn {
-    display: inline-block;
-    text-align: center;
-  }
-  
-  /* li a:hover, .dropdown:hover .dropbtn {
+li a,
+.dropbtn {
+  display: inline-block;
+  text-align: center;
+}
+
+/* li a:hover, .dropdown:hover .dropbtn {
     background-color: coral;
   } */
-  
-  li.dropdown {
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 9rem;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    display: block;
-    text-align: left;
-  }
-  
-  .dropdown-content a:hover {
-    background-color: burlywood;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--squid-ink);
+  min-width: 9rem;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: burlywood;
+  color: var(--squid-ink) !important;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
