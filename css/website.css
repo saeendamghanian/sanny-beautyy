@@ -15,7 +15,7 @@
 }
 
 /* prettier-ignore */
-@font-face {
+/* @font-face {
   font-family: 'Amazon Ember Display Heavy';
   src: url('../font/Ember-Display/AmazonEmberDisplay_He.ttf');
 }
@@ -38,7 +38,7 @@
 @font-face {
   font-family: "Amazon Ember Display Light";
   src: url("../font/Ember-Display/AmazonEmberDisplay_Lt.ttf");
-}
+} */
 
 * {
   padding: 0;
@@ -51,7 +51,7 @@ html {
 }
 
 body {
-  font-family: Amazon Ember Display Light;
+  /* font-family: Amazon Ember Display Light; */
   font-size: 16px;
   background-color: var(--bg_2);
   padding-top: 2rem;

@@ -30,7 +30,7 @@ fieldset > div {
   text-align: center;
 }
 
-fieldset > div > div {
+fieldset > div > div:first-child {
   padding-top: 2rem;
   /* display: flex;
     justify-content: space-evenly; */
@@ -80,20 +80,22 @@ fieldset textarea {
   border-color: var(--text_color_2);
 }
 
-#send-btn > input {
+#send-btn > input,
+#send-btn > button {
   background: none;
   border: none;
-  padding: 0.5rem 1rem;
+  padding: 0.9rem 1.6rem;
+  outline: none;
 }
 
-#send-btn > input:hover {
+#send-btn > input:hover,
+#send-btn > button:hover {
   color: var(--text_color_2);
 }
 
 #send-btn {
   position: relative;
   display: inline-block;
-  padding: 0.4rem 0.6rem;
   color: var(--bg_1);
   font-size: 16px;
   text-decoration: none;
@@ -201,7 +203,7 @@ fieldset textarea {
     padding-top: 2rem;
   }
 
-  fieldset > div > div {
+  fieldset > div > div:first-child {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -214,13 +216,14 @@ fieldset textarea {
     height: 20vw;
   }
 
-  #send-btn {
-    padding: 0.8rem 1.5rem;
+  #send-btn > input,
+  #send-btn > button {
+    padding: 1.3rem 2.5rem;
   }
 }
 
 @media (min-width: 1024px) {
-  fieldset > div > div {
+  fieldset > div > div:first-child {
     padding-top: 4rem;
   }
   form {
