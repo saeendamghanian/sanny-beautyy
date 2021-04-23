@@ -1,17 +1,17 @@
 /* ONLY WEBSITE CSS */
 
 :root {
-  --bg_1: #232f3e;
-  --bg_2: #eaeded;
-  --bg_3: #6c7778;
-  --text_color_1: #fff;
-  --text_color_2: #dad5d5;
-  --mark_color: #ff9900;
-  --social-bg: #000;
-  --instagram: #e95950;
-  --youtube: #ff0000;
-  --facebook: #3b5998;
-  --telegram: #0088cc;
+	--bg_1: #232f3e;
+	--bg_2: #eaeded;
+	--bg_3: #6c7778;
+	--text_color_1: #fff;
+	--text_color_2: #dad5d5;
+	--mark_color: #ff9900;
+	--social-bg: #000;
+	--instagram: #e95950;
+	--youtube: #ff0000;
+	--facebook: #3b5998;
+	--telegram: #0088cc;
 }
 
 /* prettier-ignore */
@@ -21,534 +21,577 @@
 }
 
 @font-face {
-  font-family: "Amazon Ember Display Bold";
-  src: url("../font/Ember-Display/AmazonEmberDisplay_Bd.ttf");
+	font-family: 'Amazon Ember Display Bold';
+	src: url('../font/Ember-Display/AmazonEmberDisplay_Bd.ttf');
 }
 
 @font-face {
-  font-family: "Amazon Ember Display Medium";
-  src: url("../font/Ember-Display/AmazonEmberDisplay_Md.ttf");
+	font-family: 'Amazon Ember Display Medium';
+	src: url('../font/Ember-Display/AmazonEmberDisplay_Md.ttf');
 }
 
 @font-face {
-  font-family: "Amazon Ember Display Regular";
-  src: url("../font/Ember-Display/AmazonEmberDisplay_Rg.ttf");
+	font-family: 'Amazon Ember Display Regular';
+	src: url('../font/Ember-Display/AmazonEmberDisplay_Rg.ttf');
 }
 
 @font-face {
-  font-family: "Amazon Ember Display Light";
-  src: url("../font/Ember-Display/AmazonEmberDisplay_Lt.ttf");
+	font-family: 'Amazon Ember Display Light';
+	src: url('../font/Ember-Display/AmazonEmberDisplay_Lt.ttf');
 }
 
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 body {
-  font-family: Amazon Ember Display Light;
-  font-size: 16px;
-  background-color: var(--bg_2);
-  padding-top: 2rem;
+	font-family: Amazon Ember Display Light;
+	font-size: 16px;
+	background-color: var(--bg_2);
+	padding-top: 2rem;
 }
 
 header {
-  position: fixed;
-  background-color: var(--bg_1);
-  top: 0;
-  z-index: 1000;
-  transition: top 0.5s;
+	position: fixed;
+	background-color: var(--bg_1);
+	top: 0;
+	z-index: 1000;
+	transition: top 0.5s;
 }
 
 header {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 header > div {
-  display: flex;
-  justify-content: flex-start;
-  padding: 0 1rem 0.5rem 1rem;
-  align-items: center;
-  width: 100vw;
+	display: flex;
+	justify-content: flex-start;
+	padding: 0 1rem 0.5rem 1rem;
+	align-items: center;
+	width: 100vw;
 }
 
 p {
-  text-align: justify;
+	text-align: justify;
+}
+
+a {
+	text-decoration: none;
 }
 
 .overflow-hidden {
-  overflow: hidden;
+	overflow: hidden;
 }
 
 .btn {
-  padding: 0.7rem;
-  border-radius: 0px;
-  border: none;
-  margin: 1rem;
-  cursor: pointer;
-  font-weight: 900;
-  text-decoration: none;
-  font-size: 1em;
-  font-family: "Amazon Ember Display Bold";
-  display: inline-block;
+	padding: 0.7rem;
+	border-radius: 0px;
+	border: none;
+	margin: 1rem;
+	cursor: pointer;
+	font-weight: 900;
+	text-decoration: none;
+	font-size: 1em;
+	font-family: 'Amazon Ember Display Bold';
+	display: inline-block;
 }
 
 .current-page {
-  border-bottom: solid var(--mark_color) !important;
+	border-bottom: solid var(--mark_color) !important;
 }
 
 nav#sidenav > div {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 #main-nav {
-  display: none;
+	display: none;
 }
 
 #menu-icon {
-  display: inline-block;
-  padding-right: 1rem;
-  margin-right: 1rem;
-  border-right: solid var(--bg_2) 1px;
-  cursor: pointer;
+	display: inline-block;
+	padding-right: 1rem;
+	margin-right: 1rem;
+	border-right: solid var(--bg_2) 1px;
+	cursor: pointer;
 }
 
 #menu-icon > div {
-  width: 1.5rem;
-  height: 0.2rem;
-  background-color: var(--bg_3);
-  margin: 0.2rem 0;
+	width: 1.5rem;
+	height: 0.2rem;
+	background-color: var(--bg_3);
+	margin: 0.2rem 0;
 }
 
 #header-title {
-  cursor: default;
-  user-select: none;
+	cursor: default;
+	user-select: none;
 }
 
 #logo {
-  width: 16vw;
-  margin-left: 24vw;
+	width: 16vw;
+	margin-left: 24vw;
 }
 
 /* The side navigation menu */
 #sidenav-items {
-  height: 100%;
-  /* 100% Full-height */
-  width: 0;
-  /* 0 width - change this with JavaScript */
-  position: fixed;
-  /* Stay in place */
-  z-index: 1;
-  /* Stay on top */
-  top: 0;
-  /* Stay at the top */
-  left: 0;
-  background-color: var(--bg_1);
-  overflow-x: hidden;
-  /* Disable horizontal scroll */
-  padding-top: 2rem;
-  /* Place content 60px from the top */
-  transition: 0.5s;
-  /* 0.5 second transition effect to slide in the sidenav */
+	height: 100%;
+	/* 100% Full-height */
+	width: 0;
+	/* 0 width - change this with JavaScript */
+	position: fixed;
+	/* Stay in place */
+	z-index: 1;
+	/* Stay on top */
+	top: 0;
+	/* Stay at the top */
+	left: 0;
+	background-color: var(--bg_1);
+	overflow-x: hidden;
+	/* Disable horizontal scroll */
+	padding-top: 2rem;
+	/* Place content 60px from the top */
+	transition: 0.5s;
+	/* 0.5 second transition effect to slide in the sidenav */
 }
 
 /* The navigation menu links */
 #sidenav-items a,
 .dropdown-btn {
-  padding: 1.5rem 1rem 0.5rem 1rem;
-  margin-left: 2rem;
-  text-decoration: none;
-  white-space: nowrap;
-  color: var(--text_color_1);
-  display: flex;
-  transition: 0.3s;
-  width: fit-content;
-  outline: none;
+	padding: 1.5rem 1rem 0.5rem 1rem;
+	margin-left: 2rem;
+	text-decoration: none;
+	white-space: nowrap;
+	color: var(--text_color_1);
+	display: flex;
+	transition: 0.3s;
+	width: fit-content;
+	outline: none;
 }
 
 .dropdown-btn {
-  font-size: 16px;
-  font-family: Amazon Ember Display Light;
-  background: none;
-  outline: none;
-  border: none;
+	font-size: 16px;
+	font-family: Amazon Ember Display Light;
+	background: none;
+	outline: none;
+	border: none;
 }
 
 /* When you mouse over the navigation links, change their color */
 #sidenav-items a:hover {
-  color: var(--mark_color);
+	color: var(--mark_color);
 }
 
 /* Position and style the close button (top right corner) */
 #sidenav-items .closebtn {
-  position: absolute;
-  top: 0;
-  right: 1rem;
-  font-size: 36px;
-  margin-left: 3rem;
-  color: var(--text_color_1);
-  cursor: pointer;
+	position: absolute;
+	top: 0;
+	right: 1rem;
+	font-size: 36px;
+	margin-left: 3rem;
+	color: var(--text_color_1);
+	cursor: pointer;
 }
 
 #sidenav-items .closebtn:hover {
-  color: var(--mark_color);
+	color: var(--mark_color);
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
-  transition: margin-left 0.5s;
-  padding: 1rem;
+	transition: margin-left 0.5s;
+	padding: 1rem;
 }
 
 /* The side navigation menu end */
 #section-home {
-  background: center / contain no-repeat url(../images/img-02.jpeg);
-  height: 100vh;
-  width: 100%;
-  background-position: center;
-  color: var(--text_color_1);
-  font-size: 1.6em;
+	background: center / contain no-repeat url(../images/img-02.jpeg);
+	height: 100vh;
+	width: 100%;
+	background-position: center;
+	color: var(--text_color_1);
+	font-size: 1.6em;
 }
 
 .section img {
-  align-self: center;
+	align-self: center;
 }
 
 .section {
-  /* display: flex;
+	/* display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; */
-  padding: 4rem 0;
-  text-align: center;
-  align-self: center;
+	padding: 4rem 0;
+	text-align: center;
+	align-self: center;
 }
 
 section#social-network > div {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 3rem 0 1rem 0;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 3rem 0 1rem 0;
 
-  /* background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+	/* background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
             linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
             linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%),
             linear-gradient(336deg, rgba(197,232,12,.8), rgba(0,0,255,0) 70.71%); */
 }
 
 .fab {
-  font-size: 2rem;
+	font-size: 2rem;
 }
 
 .fa-instagram {
-  color: var(--instagram);
+	color: var(--instagram);
 }
 
 .fa-youtube {
-  color: var(--youtube);
+	color: var(--youtube);
 }
 
 .fa-facebook-square {
-  color: var(--facebook);
+	color: var(--facebook);
 }
 
 .fa-telegram {
-  color: var(--telegram);
+	color: var(--telegram);
 }
 
 .section-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .section-image {
-  width: 90vw;
-  margin-top: 1rem;
+	width: 90vw;
+	margin-top: 1rem;
 }
 
 .content-txt {
-  margin: 1rem;
-  text-align: left;
+	margin: 1rem;
+	text-align: left;
 }
 
 footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-  background-color: var(--bg_1);
-  color: var(--text_color_1);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1rem;
+	background-color: var(--bg_1);
+	color: var(--text_color_2);
 }
 
 footer a {
-  color: var(--text_color_1);
+	color: var(--text_color_1);
 }
 
 footer > img {
-  width: 17vw;
+	width: 17vw;
+}
+
+/* Cookie */
+.cookie-banner {
+	position: fixed;
+	bottom: 40px;
+	left: 10%;
+	right: 10%;
+	width: 80%;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	background-color: var(--bg_3);
+	border-radius: 5px;
+	box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+	color: var(--text_color_2);
+}
+
+.cookie-banner a {
+	color: var(--text_color_1);
+}
+.close {
+	height: 20px;
+	background-color: #777;
+	border: none;
+	color: white;
+	border-radius: 2px;
+	cursor: pointer;
+	margin-top: 1rem;
 }
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
 }
 
 /* Hide the images by default */
 .mySlides {
-  display: none;
+	display: none;
 }
 
 /* Next & previous buttons */
 .prev,
 .next {
-  display: none;
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  padding: 0.25rem;
-  color: var(--text_color_1);
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 50%;
-  user-select: none;
-  width: 2rem;
-  background-color: var(--mark_color);
+	display: none;
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	padding: 0.25rem;
+	color: var(--text_color_1);
+	font-weight: bold;
+	font-size: 20px;
+	transition: 0.6s ease;
+	border-radius: 50%;
+	user-select: none;
+	width: 2rem;
+	background-color: var(--mark_color);
 }
 
 /* Position the "next button" to the right */
 .next {
-  border-radius: 50%;
+	border-radius: 50%;
 }
 
 .next::before {
-  font-family: "Material Icons";
-  content: "arrow_forward";
-  vertical-align: -0.2rem;
-  margin-left: 0.1rem;
+	font-family: 'Material Icons';
+	content: 'arrow_forward';
+	vertical-align: -0.2rem;
+	margin-left: 0.1rem;
 }
 
 .prev::before {
-  font-family: "Material Icons";
-  content: "arrow_backward";
-  vertical-align: -0.2rem;
-  margin-left: 0.1rem;
+	font-family: 'Material Icons';
+	content: 'arrow_backward';
+	vertical-align: -0.2rem;
+	margin-left: 0.1rem;
 }
 
 /* The dots/bullets/indicators */
 .dot {
-  cursor: pointer;
-  height: 1rem;
-  width: 1rem;
-  margin: 0 0.5rem;
-  background-color: var(--bg_1);
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+	cursor: pointer;
+	height: 1rem;
+	width: 1rem;
+	margin: 0 0.5rem;
+	background-color: var(--bg_1);
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
 }
 
 span.active,
 .dot:hover {
-  background-color: var(--mark_color);
+	background-color: var(--mark_color);
 }
 
 /* Fading animation */
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
 }
 
 @-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
+	from {
+		opacity: 0.4;
+	}
 
-  to {
-    opacity: 1;
-  }
+	to {
+		opacity: 1;
+	}
 }
 
 @keyframes fade {
-  from {
-    opacity: 0.4;
-  }
+	from {
+		opacity: 0.4;
+	}
 
-  to {
-    opacity: 1;
-  }
+	to {
+		opacity: 1;
+	}
 }
 
 @media (min-width: 768px) {
-  body {
-    padding-top: 7rem;
-  }
+	body {
+		padding-top: 7rem;
+	}
 
-  .rotate-scale-translate {
-    transform: rotate(-10deg) scale(1.5) translate(5rem, 2.6rem);
-  }
+	.rotate-scale-translate {
+		transform: rotate(-10deg) scale(1.5) translate(5rem, 2.6rem);
+	}
 
-  #logo {
-    width: 8vw;
-    margin-left: 37vw;
-  }
+	#logo {
+		width: 8vw;
+		margin-left: 37vw;
+	}
 
-  .section {
-    padding: 2rem 0;
-  }
+	.section {
+		padding: 2rem 0;
+	}
 
-  section#social-network > div {
-    margin: 0 auto;
-    padding: 4rem 0 2rem 0;
-    width: 70%;
-  }
+	section#social-network > div {
+		margin: 0 auto;
+		padding: 4rem 0 2rem 0;
+		width: 70%;
+	}
 
-  .fab {
-    font-size: 2.8rem;
-  }
+	.fab {
+		font-size: 2.8rem;
+	}
 
-  .section-body {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
+	.section-body {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+	}
 
-  .section-content {
-    max-width: 40vw;
-  }
+	.section-content {
+		max-width: 40vw;
+	}
 
-  .section-image {
-    width: 40vw;
-    /* height: 27vw; */
-    /* height: auto; */
-  }
+	.section-image {
+		width: 40vw;
+		/* height: 27vw; */
+		/* height: auto; */
+	}
 
-  .prev,
-  .next {
-    display: block;
-  }
+	.prev,
+	.next {
+		display: block;
+	}
 
-  .next {
-    right: 3%;
-  }
+	.next {
+		right: 3%;
+	}
 
-  .prev {
-    left: 5%;
-  }
+	.prev {
+		left: 5%;
+	}
 
-  footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: var(--bg_1);
-    color: var(--bg_2);
-  }
+	footer {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		background-color: var(--bg_1);
+		color: var(--bg_2);
+	}
 
-  footer > img {
-    width: 8vw;
-  }
+	footer > img {
+		width: 8vw;
+	}
 
-  #sidenav-items {
-    padding-top: 5rem;
-  }
+	.cookie-banner {
+		flex-direction: row;
+	}
+
+	.close {
+		margin-top: 0;
+	}
+
+	#sidenav-items {
+		padding-top: 5rem;
+	}
 }
 
 @media (min-width: 1024px) {
-  body {
-    padding-top: 16rem;
-  }
+	body {
+		padding-top: 16rem;
+	}
 
-  .current-page {
-    border-bottom-color: var(--mark_color) !important;
-  }
+	.current-page {
+		border-bottom-color: var(--mark_color) !important;
+	}
 
-  #main-nav {
-    display: flex;
-    justify-content: center;
-  }
+	#main-nav {
+		display: flex;
+		justify-content: center;
+	}
 
-  #main-nav > ul {
-    display: flex;
-    list-style: none;
-  }
+	#main-nav > ul {
+		display: flex;
+		list-style: none;
+	}
 
-  #main-nav > ul li {
-    margin: 0 1rem;
-    cursor: pointer;
-    border-bottom: solid 2px var(--bg_1);
-  }
+	#main-nav > ul li {
+		margin: 0 1rem;
+		cursor: pointer;
+		border-bottom: solid 2px var(--bg_1);
+	}
 
-  #main-nav > ul li a,
-  .dropbtn {
-    padding: 1rem;
-    text-decoration: none;
-    color: var(--bg_2);
-  }
+	#main-nav > ul li a,
+	.dropbtn {
+		padding: 1rem;
+		text-decoration: none;
+		color: var(--bg_2);
+	}
 
-  #main-nav > ul li:hover {
-    color: var(--mark_color);
-    border-bottom: solid 2px var(--mark_color);
-  }
+	#main-nav > ul li:hover {
+		color: var(--mark_color);
+		border-bottom: solid 2px var(--mark_color);
+	}
 
-  header > div {
-    justify-content: center;
-    margin: 0;
-    padding-bottom: 0;
-  }
+	header > div {
+		justify-content: center;
+		margin: 0;
+		padding-bottom: 0;
+	}
 
-  header > div > nav {
-    display: none;
-  }
+	header > div > nav {
+		display: none;
+	}
 
-  #logo {
-    margin-left: 0;
-  }
+	#logo {
+		margin-left: 0;
+	}
 
-  .next {
-    right: -7%;
-  }
+	.next {
+		right: -7%;
+	}
 
-  .prev {
-    left: -5%;
-  }
+	.prev {
+		left: -5%;
+	}
 
-  .fab {
-    color: var(--social-bg);
-  }
+	.fab {
+		color: var(--social-bg);
+	}
 
-  .fa-instagram:hover {
-    color: var(--instagram);
-  }
+	.fa-instagram:hover {
+		color: var(--instagram);
+	}
 
-  .fa-youtube:hover {
-    color: var(--youtube);
-  }
+	.fa-youtube:hover {
+		color: var(--youtube);
+	}
 
-  .fa-facebook-square:hover {
-    color: var(--facebook);
-  }
+	.fa-facebook-square:hover {
+		color: var(--facebook);
+	}
 
-  .fa-telegram:hover {
-    color: var(--telegram);
-  }
+	.fa-telegram:hover {
+		color: var(--telegram);
+	}
 
-  section#social-network > div {
-    padding: 6rem 0 4rem 0;
-  }
+	section#social-network > div {
+		padding: 6rem 0 4rem 0;
+	}
 
-  footer > img {
-    width: 4vw;
-  }
+	footer > img {
+		width: 4vw;
+	}
 }
