@@ -1,101 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../css/website.css" />
+		<link rel="stylesheet" href="../css/MainbarDropdown.css" />
+		<link rel="stylesheet" href="../css/SidebarDropdown.css" />
+		<link rel="stylesheet" href="../css/video.css" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+		<script src="https://kit.fontawesome.com/4b3332df1a.js" crossorigin="anonymous"></script>
+		<title>Sanny Beauty</title>
+	</head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/website.css" />
-    <link rel="stylesheet" href="../css/MainbarDropdown.css" />
-    <link rel="stylesheet" href="../css/SidebarDropdown.css" />
-    <link rel="stylesheet" href="../css/video.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-    <script src="https://kit.fontawesome.com/4b3332df1a.js" crossorigin="anonymous"></script>
-    <title>Sanny Beauty</title>
-</head>
+	<body>
+		<header onclick="showHeader()" onmouseover="showHeader()">
+			<div>
+				<nav id="sidenav">
+					<div>
+						<div id="sidenav-items">
+							<span class="closebtn" onclick="closeNav()">&times;</span>
+							<a href="../index.html" onclick="closeNav()">Home</a>
+							<button class="dropdown-btn">Social Media</button>
+							<div class="dropdown-container">
+								<a href="https://www.instagram.com/sanny.beautyy/" target="_blank">Instagram</a>
+								<a href="https://www.youtube.com/channel/UCCJAcMZ8hOYon4dex_h1udw" target="_blank">Youtube</a>
+								<a href="https://www.facebook.com/sani.safaei.58" target="_blank">Facebook</a>
+								<a href="https://t.me/Sannypersiannn" target="_blank">Telegram</a>
+							</div>
+							<a class="current-page" href="./video.html" onclick="closeNav()">Video</a>
+							<a href="./discountCode.html" onclick="closeNav()">Discount Code</a>
+							<!-- <a href="#section-resources" onclick="closeNav()">Contact</a> -->
+						</div>
 
-<body>
-    <header onclick="showHeader()" onmouseover="showHeader()">
-        <div>
-            <nav id="sidenav">
-                <div>
-                    <div id="sidenav-items">
-                        <span class="closebtn" onclick="closeNav()">&times;</span>
-                        <a href="../index.html" onclick="closeNav()">Home</a>
-                        <button class="dropdown-btn">
-                            Social Media
-                        </button>
-                        <div class="dropdown-container">
-                            <a href="https://www.instagram.com/sanny.beautyy/" target="_blank">Instagram</a>
-                            <a href="https://www.youtube.com/channel/UCCJAcMZ8hOYon4dex_h1udw" target="_blank">Youtube</a>
-                            <a href="https://www.facebook.com/sani.safaei.58" target="_blank">Facebook</a>
-                            <a href="https://t.me/Sannypersiannn" target="_blank">Telegram</a>
-                        </div>
-                        <a class="current-page" href="./video.html" onclick="closeNav()">Video</a>
-                        <a href="./discountCode.html" onclick="closeNav()">Discount Code</a>
-                        <!-- <a href="#section-resources" onclick="closeNav()">Contact</a> -->
-                    </div>
+						<!-- Use any element to open the sidenav -->
+						<div id="menu-icon" onclick="openNav()">
+							<div></div>
+							<div></div>
+							<div></div>
+						</div>
+					</div>
+				</nav>
+				<a href="../index.html">
+					<img id="logo" src="../images/logo-1.png" />
+				</a>
+			</div>
+			<nav>
+				<div id="main-nav">
+					<ul>
+						<li class="nav-item"><a href="../index.html">Home</a></li>
+						<li class="dropdown">
+							<span class="dropbtn">Social Media</span>
+							<div class="dropdown-content">
+								<a href="https://www.instagram.com/sanny.beautyy/" target="_blank">Instagram</a>
+								<a href="https://www.youtube.com/channel/UCCJAcMZ8hOYon4dex_h1udw" target="_blank">Youtube</a>
+								<a href="https://www.facebook.com/sani.safaei.58" target="_blank">Facebook</a>
+								<a href="https://t.me/Sannypersiannn" target="_blank">Telegram</a>
+							</div>
+						</li>
+						<li class="nav-item current-page"><a href="./video.html">Video</a></li>
+						<li class="nav-item"><a href="./discountCode.html">Discount Code</a></li>
+						<!-- <li class="nav-item"><a href="#">Contact</a></li> -->
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<!-- <section id="section-home"></section> -->
+		<section id="video">
+			<div>
+				<iframe
+					src="https://www.youtube.com/embed/WaPvwaZpcug"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen
+				>
+				</iframe>
+			</div>
+		</section>
+		<section id="social-network">
+			<div>
+				<a href="https://www.instagram.com/sanny.beautyy/" target="_blank"><i class="fab fa-instagram"></i></a>
+				<a href="https://www.youtube.com/channel/UCCJAcMZ8hOYon4dex_h1udw" target="_blank"><i class="fab fa-youtube"></i></a>
+				<a href="https://www.facebook.com/sani.safaei.58" target="_blank"><i class="fab fa-facebook-square"></i></a>
+				<a href="https://t.me/Sannypersiannn" target="_blank"><i class="fab fa-telegram"></i></a>
+			</div>
+		</section>
+		<footer>
+			<p><a href="./datenschutz.html">Impressum / Datenschutz</a></p>
+			<p>© 2021, Sanny Beauty Corporation designed by SaeeneeaS</p>
+			<a href="../index.html">
+				<img id="footer-logo" src="../images/logo-1.png" />
+			</a>
+		</footer>
 
-                    <!-- Use any element to open the sidenav -->
-                    <div id="menu-icon" onclick="openNav()">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                </div>
-            </nav>
-        <a href="../index.html">
-            <img id="logo" src="../images/logo-1.png" />
-        </a>
-        </div>
-        <nav>
-            <div id="main-nav">
-                <ul>
-                    <li class="nav-item"><a href="../index.html">Home</a></li>
-                    <li class="dropdown">
-                        <span class="dropbtn">Social Media</span>
-                        <div class="dropdown-content">
-                            <a href="https://www.instagram.com/sanny.beautyy/" target="_blank">Instagram</a>
-                            <a href="https://www.youtube.com/channel/UCCJAcMZ8hOYon4dex_h1udw" target="_blank">Youtube</a>
-                            <a href="https://www.facebook.com/sani.safaei.58" target="_blank">Facebook</a>
-                            <a href="https://t.me/Sannypersiannn" target="_blank">Telegram</a>
-                        </div>
-                    </li>
-                    <li class="nav-item current-page"><a href="./video.html">Video</a></li>
-                    <li class="nav-item"><a href="./discountCode.html">Discount Code</a></li>
-                    <!-- <li class="nav-item"><a href="#">Contact</a></li> -->
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <!-- <section id="section-home"></section> -->
-    <section id="video">
-        <div>
-            <iframe src="https://www.youtube.com/embed/WaPvwaZpcug" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
-        </div>
-    </section>
-    <section id="social-network">
-        <div>
-        <a href="https://www.instagram.com/sanny.beautyy/" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.youtube.com/channel/UCCJAcMZ8hOYon4dex_h1udw" target="_blank"><i class="fab fa-youtube"></i></a>
-        <a href="https://www.facebook.com/sani.safaei.58" target="_blank"><i class="fab fa-facebook-square"></i></a>
-        <a href="https://t.me/Sannypersiannn" target="_blank"><i class="fab fa-telegram"></i></a>
-        </div>
-    </section>
-    <footer>
-        <p>
-            <a href="#">Conditions of Use</a> | <a href="#">Privacy Notice</a> | ©
-            2020, Sanny Beauty Corporation
-        </p>
-        <a href="../index.html">
-            <img id="logo" src="../images/logo-1.png" />
-        </a>
-    </footer>
-
-    <script src="../js/website.js"></script>
-    <script src="../js/SidebarDropdown.js"></script>
-</body>
-
+		<script src="../js/website.js"></script>
+		<script src="../js/SidebarDropdown.js"></script>
+	</body>
 </html>

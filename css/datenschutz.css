@@ -1,0 +1,53 @@
+/* Styles for Datenshutz */
+
+h3,
+p {
+}
+
+#datenschutz {
+	padding-top: 5rem;
+}
+
+#datenschutz > div {
+	padding: 0 1rem;
+}
+
+.paragraph {
+	padding-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+	#datenschutz {
+		padding-top: 0;
+	}
+
+	#datenschutz > div {
+		padding: 0 2rem;
+	}
+
+	.paragraph {
+		padding-bottom: 1.5rem;
+	}
+}
+
+@media (min-width: 1024px) {
+	h3 {
+		padding-bottom: 0.5rem;
+	}
+	#datenschutz {
+		padding-top: 0;
+	}
+
+	#datenschutz > div {
+		background-color: var(--bg_1);
+		color: var(--text_color_1);
+		padding: 3rem;
+		width: 70%;
+		margin: 0 auto;
+		border-radius: 5px;
+	}
+
+	.paragraph {
+		padding-bottom: 2.5rem;
+	}
+}

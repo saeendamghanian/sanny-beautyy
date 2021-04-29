@@ -83,13 +83,6 @@ inputs.forEach(input => {
 /* Cookie */
 const cookieBanner = document.querySelector('.cookie-banner');
 
-if (localStorage.getItem('cookieSeen') === 'shown') {
-	localStorage.setItem('cookieSeen', 'not shown');
-}
-if (localStorage.getItem('cookieSeen') !== 'shown') {
-	cookieBanner.style.display = 'flex';
-	localStorage.setItem('cookieSeen', 'shown');
-}
 document.querySelector('.close').addEventListener('click', function () {
 	cookieBanner.style.display = 'none';
 });
