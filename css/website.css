@@ -214,7 +214,7 @@ nav#sidenav > div {
 /* The side navigation menu end */
 #section-home {
 	background: center / contain no-repeat url(../images/img-02.jpeg);
-	height: 60vh;
+	height: 100vh;
 	width: 100%;
 	background-position: center;
 	color: var(--text_color_1);
