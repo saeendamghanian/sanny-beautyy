@@ -214,7 +214,7 @@ nav#sidenav > div {
 /* The side navigation menu end */
 #section-home {
 	background: center / contain no-repeat url(../images/img-02.jpeg);
-	height: 100vh;
+	height: 75vh;
 	width: 100%;
 	background-position: center;
 	color: var(--text_color_1);
@@ -448,6 +448,10 @@ span.active,
 		padding: 2rem 0;
 	}
 
+	#section-home {
+		height: 91vh;
+	}
+
 	section#social-network > div {
 		margin: 0 auto;
 		padding: 4rem 0 2rem 0;
@@ -565,6 +569,10 @@ span.active,
 
 	#logo {
 		margin-left: 0;
+	}
+
+	#section-home {
+		height: 100vh;
 	}
 
 	.next {
